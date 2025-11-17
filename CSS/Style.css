@@ -456,6 +456,9 @@ footer a i {
    .image-footer{
     width: 15% !important;
   }
+  .small-f{
+    font-size: 1.6rem;
+  }
 }
 @media (min-width: 1400px){
    .image-footer{
