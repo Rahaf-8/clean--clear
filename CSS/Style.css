@@ -24,7 +24,39 @@ p {
   width: 90%;
   margin: auto;
 }
+.container-after-2{
+  width: 90%;
+   margin: auto;
+}
+.icon-body {
+  width: 55px;
+  position: fixed;
+  left: 10%;
+  top: 30%;
+  z-index: 99999;
+}
+.phone-icon {
+  width: 52px;
+  position: fixed;
+  left: 10%;
+  top: 38%;
+  z-index: 99999;
+}
+.shake {
+  animation: shake 0.5s infinite;
+}
 
+@keyframes shake {
+   0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg); /* نص لفة بسيطة */
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 :root {
   --main-color: #376b93;
   --secondary-color: #0ba6df;
@@ -39,31 +71,31 @@ p {
   font-family: AlHurra Font regular;
   src: url(../fonts/AlHurra\ Font\ Regular.ttf);
 }
-.AlHurra{
-  font-family:AlHurra Font regular;
+.AlHurra {
+  font-family: AlHurra Font regular;
 }
-.palestine{
+.palestine {
   font-family: palestine-regular;
 }
-.main-color{
-  color:var(--main-color);
+.main-color {
+  color: var(--main-color);
 }
-.secondary-color{
+.secondary-color {
   color: var(--secondary-color);
 }
-.background-main{
+.background-main {
   background-color: var(--main-color);
 }
-.background-secondary{
+.background-secondary {
   background-color: var(--secondary-color);
 }
-.w-40{
-width: 20%;
+.w-40 {
+  width: 20%;
 }
-.display-7{
+.display-7 {
   font-size: 1.2rem;
 }
-.small-f{
+.small-f {
   font-size: 0.8rem;
 }
 /* nav section */
@@ -120,24 +152,24 @@ header .header-content p {
   position: relative;
   color: var(--main-color);
 }
-/* header .header-content p::before {
+header .header-content p::before {
   content: "";
-  width: 18%;
+  width: 50px;
   height: 0.04rem;
-  background-color: black;
+  background-color: var(--main-color);
   position: absolute;
   top: 45%;
-  left: 80%;
+  left: -4%;
 }
 header .header-content p::after {
   content: "";
-  width: 18%;
+  width: 50px;
   height: 0.04rem;
-  background-color: black;
+  background-color: var(--main-color);
   position: absolute;
   top: 45%;
-  right: 80%;
-} */
+  right: -4%;
+}
 header .header-content .header-2 {
   margin-top: 20px;
   background-color: var(--main-color);
@@ -153,58 +185,14 @@ header .header-content .header-2 h3 {
 .header-3 ul {
   display: flex;
   gap: 5vw;
-  list-style: none;
+ list-style:none;
   font-family: var(--secondary-font);
   color: var(--secondary-color);
   font-size: 1.1rem;
-  padding: 1rem 0.5rem;   /* optional: spacing */
-  margin: 0;         /* VERY IMPORTANT */
-}
-.header-3 .dot{
-  width: 5px;
-  height: 5px;
-}
-/* header .header-3::after {
-  content: "";
-  width: 0.4rem;
-  height: 0.4rem;
-  background-color: var(--main-color);
-  position: absolute;
-  border-radius: 50%;
-  top: 21%;
-  left: 60%;
-}
-header .header-3::before {
-  content: "";
-  width: 0.4rem;
-  height: 0.4rem;
-  background-color: var(--main-color);
-  position: absolute;
-  border-radius: 50%;
-  top: 21%;
-  left: 77%;
+  padding: 1rem 0.5rem; /* optional: spacing */
+  margin: 0; /* VERY IMPORTANT */
 }
 
-header .header-3 ul::after {
-  content: "";
-  width: 0.4rem;
-  height: 0.4rem;
-  border-radius: 50%;
-  background-color: var(--main-color);
-  position: absolute;
-  top: 40%;
-  left: 20%;
-}
-header .header-3 ul::before {
-  content: "";
-  width: 0.4rem;
-  height: 0.4rem;
-  border-radius: 50%;
-  background-color: var(--main-color);
-  position: absolute;
-  top: 40%;
-  right: 60%;
-} */
 header .header-3 ul li:hover {
   color: var(--main-color);
   font-weight: bold;
@@ -234,12 +222,12 @@ header .header-3 ul li:hover {
   background-position: center;
   position: relative;
 }
-.image-section::after{
+.image-section::after {
   content: "";
   height: 1rem;
   width: 100%;
   position: absolute;
-  bottom:0;
+  bottom: 0;
   right: 0;
   left: 0;
   background-color: var(--secondary-color);
@@ -298,74 +286,68 @@ section p {
   color: var(--secondary-color);
 }
 
-
-.image-2-section{
+.image-2-section {
   margin-top: 40px;
   height: 30vh;
   background-image: url(../Images/Second-Picture.jpg);
   background-size: cover;
- background-position: 30% 80%;
-  object-fit: cover;
-  object-position: bottom;
+  background-position: 30% 70%;
   position: relative;
 }
-.image-2-section::after{
+.image-2-section::after {
   content: "";
   height: 1rem;
   width: 100%;
   position: absolute;
-  bottom:0;
+  bottom: 0;
   right: 0;
   left: 0;
   background-color: var(--secondary-color);
 }
 
-.Our-Services .card-1{
+.Our-Services .card-1 {
   width: 100%;
   height: 10rem;
   border-radius: 25px;
   box-shadow: 0 0 10px var(--main-color);
 }
-.our-services-end-section .part-3{
+.our-services-end-section .part-3 {
   height: 2rem;
 }
 
-.opinions .opinion-card{
+.opinions .opinion-card {
   width: 80%;
   border: 1px solid #c2c2c2;
   border-radius: 25px;
   box-shadow: 0 0 5px var(--main-color);
   padding: 1rem;
- 
 }
 .carousal-buttons .carousel-control-prev,
 .carousal-buttons .carousel-control-next {
   width: auto;
   position: static;
-    opacity: 1 !important;
+  opacity: 1 !important;
 }
 
-
-.opinion-card p{
+.opinion-card p {
   width: 100%;
 }
 
-
 footer a i {
-  color:#fff;
-  
-}i {
-    cursor: pointer;
-    transition: 0.3s ease;
+  color: #fff;
 }
- i:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
+i {
+  cursor: pointer;
+  transition: 0.3s ease;
 }
-.image-footer{
+i:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+.image-footer {
   background-color: #ffffff;
   bottom: 0;
-  left:0;
+  left: 0;
   border-bottom-right-radius: 4rem;
   padding-top: 40px;
 }
@@ -404,7 +386,7 @@ footer a i {
   .card {
     width: 40%;
   }
-   .image-footer{
+  .image-footer {
     width: 18% !important;
   }
 }
@@ -437,31 +419,31 @@ footer a i {
   .image-section {
     height: 100vh;
   }
-  .cards{
+  .cards {
     height: 60vh;
   }
   .card {
     width: 22%;
     overflow: hidden;
   }
-  .image-footer{
+  .image-footer {
     width: 20% !important;
   }
-  .image-footer img{
+  .image-footer img {
     width: 100%;
   }
 }
 
-@media (min-width: 1200px){
-   .image-footer{
+@media (min-width: 1200px) {
+  .image-footer {
     width: 15% !important;
   }
-  .small-f{
+  .small-f {
     font-size: 1.6rem;
   }
 }
-@media (min-width: 1400px){
-   .image-footer{
+@media (min-width: 1400px) {
+  .image-footer {
     width: 12% !important;
   }
 }
